@@ -1,0 +1,41 @@
+@import "_functions.scss";
+@import "./mixins/main.scss";
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+input {
+  all: unset;
+}
+
+input::placeholder {
+  all: unset
+}
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+*,
+*:before,
+*:after {
+  scroll-behavior: smooth;
+  font-family: 'NissanBrand', Arial, Helvetica, sans-serif;
+}
+

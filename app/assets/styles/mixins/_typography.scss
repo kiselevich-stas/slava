@@ -1,0 +1,43 @@
+@import "./../_functions.scss";
+
+@mixin title {
+  font-weight: 300;
+  line-height: 120%;
+}
+@mixin bold {
+  font-weight: 600;
+}
+@mixin capslock {
+  text-transform: uppercase;
+}
+
+//titles
+@mixin title1 {
+  font-size: toRem(48px);
+  @include title;
+}
+
+@mixin title2 {
+  font-size: toRem(36px);
+  @include title;
+  @include capslock;
+}
+
+@mixin title3 {
+  font-size: toRem(20px);
+  @include title;
+  @include bold;
+  @include capslock;
+}
+
+@mixin body {
+  font-size: toRem(16px);
+  font-weight: 300;
+}
+
+@mixin caps {
+  font-size: toRem(16px);
+  font-weight: 400;
+  @include capslock;
+}
+
